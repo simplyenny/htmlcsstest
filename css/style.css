@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    }
+#logo{
+ float: left;
+ margin: 15px;
+ margin-left: 172px;
+}
+.navbar{
+    float: center;
+    list-style: none;
+    text-align: center;
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    margin-left: 80px;
+}
+.navbar>li{
+    display: inline-block;
+    padding: 8px;
+}
+.navbar>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 5px;
+}
+.navbar>li>a:hover{
+    text-decoration: underline;
+}
+.content{
+    width: 70%;
+    height: 500px;
+    background-color: lightgrey;
+    margin-top: 45px;
+    margin-left: 250px;
+}
+.content>p{
+    font-size: 28px;
+    font-weight: 900;
+    font-style: bold;
+    text-align: center;
+    line-height: 1em;
+    margin: 0px 50px 10px 100px;
+    padding-top: 120px;
+}
+small{
+    margin: 50px 50px 0 420px;
+    padding-top: 50px;
+}
+.shop{
+    margin:20px 50px 0 450px;
+    height: 40px;
+    width: 80px;
+}
+.block{
+    background-color: white;
+    width: 100%;
+    margin: 35px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    position: relative;
+  
+}
+#frame{
+    width: 25%;
+    height:150px;
+    border: 1px;
+    margin: 10px;
+    background-color: lightgrey;
+}
+#frame1{
+    width: 18%;
+    height: 150px;
+    border: 1px;
+    margin: 10px;
+    background-color: lightgrey;
+}
+.shops {
+    height: 35px;
+    width: 90px;
+    margin-top: 100px;
+    margin-left: 225px;
+    background-color: white;
+    border: 0; 
+ 
+}
+.shops1{
+    height: 25px;
+    width: 115px;
+    margin-top: 110px;
+    margin-left: 50px;
+    background-color: white;
+    border: 0;
+}
+    
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 10px;
+    margin-left: 260px;
+    padding: 5px;
+    width:70%
+}
+.footer h2{
+    font-weight: 600;
+    font-size: 22px;
+    padding:15px
+}
+.footer h3{
+    font-size: 16px;
+    font-style: thin;
+    font-weight: 200;
+    padding: 15px;
+    line-height: 1em;
+}
+.footer>label{
+    padding:10px;
+}
+.hr{
+    border-bottom: .5px solid gainsboro;
+    width: 50%;
+    font-weight: 100;
+}
+/******Responsiveness***/
+
+@media screen and (max-width:768px){
+    html, body{
+        min-height: 100vh;
+        overflow: auto;
+        }
+    .content{
+        width: 95vw;
+        height: 300px;  
+        margin-left:10px;
+    }
+    .content>p{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1em;
+        margin: 0px 50px 10px 50px;
+        padding-top: 80px;
+    }
+    small{
+        margin: 50px 50px 0 105px;
+        padding-top: 50px;
+    }
+    .shop{
+        margin:20px 25px 0 142px;
+        height: 20px;
+        width: 80px;
+    }
+    #logo{
+        margin: 5px 0px 28px 3px;
+       }
+    .navbar{
+        font-size: 10px;
+        font-weight: 200;
+        text-align:right;
+        height: 30px;
+        width: 95%;
+        margin: 8px;
+        padding-top: 5px;
+    }
+    .navbar>li{
+        display: inline-block;
+        padding: 2px;
+    }
+    .navbar>li>a{
+        font-size: 12px;
+        padding: 1.5px;
+    }
+    .footer{
+        margin-bottom: 10px;
+        margin-left: 30px;
+        padding: 2px;
+        
+    }
+    .block{
+        margin: 15px; 
+        margin-left: 0;    
+    }
+    #frame, 
+    #frame1{
+        width: 25%;
+        height:150px;  
+        padding-bottom: 25px;
+    }
+    
+    .shops {
+        height: 35px;
+        width: 80px;
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+    .shops1{
+        font-size: 12px;
+        height: 35px;
+        width: 58px;
+        margin-top: 110px;
+        margin-left: 30px;
+    }
+    
+}
